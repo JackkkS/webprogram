@@ -1,0 +1,261 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>TAWANHOTEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js"
+    crossorigin="anonymous"></script>
+    <link rel = "icon" href = "images/logo.png" type = "image/png">
+    
+</head>
+<body>
+
+    <header class = "header" id = "header">
+        <div class = head-top>
+            <div class ="site name">
+                <span>TAWANHOTEL</span>
+            </div>
+            <div class = "site-nav">
+                <span id ="nav-btn">MENU <i class = "fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class = "head-bottom flex">
+            <h2>WELCOME TO OURS WEBSITE</h2>
+            <p>ยินดีต้อนรับสู่เว็บไซต์โรงแรมของพวกเรา</p>
+            <button type = "button" class= "btn"><a href="index.html">HOME</a></button>
+        </div>
+
+        
+        </header>
+        <div class = "sidenav" id="sidenav">
+            <span class ="cancel-btn" id = "cancel-btn">
+                <i class="fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#rooms">ROOMS</a></li>
+                <li><a href="#customers">CUSTOMERS</a></li>
+            </ul>
+            <button class ="btn sign-up">Sign up</button>
+            <button class ="btn log-in">Log in</button>
+        </div>        
+
+
+
+        <div id ="modal"></div>
+
+        
+
+        <section class="rooms sec-width" id="rooms">
+            <div class="title">
+                    <h2>room</h2>
+            </div>
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="images/std.jpg" style="width:100%">
+                <img class="mySlides" src="images/std1.jpg" style="width:100%">
+                <img class="mySlides" src="images/std2.jpg" style="width:100%">
+                <img class="mySlides" src="images/std3.jpg" style="width:100%">
+                <img class="mySlides" src="images/std4.jpg" style="width:100%">
+              
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+                    <div class="room-text">
+                        <h3>Standard room</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Non Smoking Rooms.
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Air conditioning
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Wireless Internet
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Cable TV / Satellite.
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                 TV 32"
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Smoke Detector
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Drinking water
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Refrigerator
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Desk
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Hair dryer
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Bathroom amenities
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Hot & Cold Shower
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Lighting
+                                </li>
+                            <p><br>Type: 1 King bed or 2 Single beds</p>
+                            <p class="rate">
+                                <span>899 THB/</span> Per Night
+                            </p>
+                            <button type = "button" class= "btn"><a href="bk.html">BOOK NOW</a></button>
+                        </ul>
+
+                    </div>
+                </article>
+
+               
+                <section class="customers" id="customers">
+                    <div class="sec-width">
+                        <div class="title">
+                            <h2>customers</h2>
+                        </div>
+                        <div class="customers-container">
+                            <div class="customer">
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <h3>We love it</h3>
+                                <p>like it</p>
+                                <img src="images/img4.png" alt="customer image">
+                                <span>Panupong, Bangkok</span>
+                            </div>
+        
+                            
+                                <div class="customer">
+                                    <div class="rating">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        
+                                    </div>
+                                    <h3>Comfortable Living</h3>
+                                    <p>like it</p>
+                                    <img src="images/img4.png" alt="customer image">
+                                    <span>Frankin, Bangkok</span>
+                                </div>
+        
+        
+                                
+                                    <div class="customer">
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h3>Nice Place</h3>
+                                        <p>like it</p>
+                                        <img src="images/img4.png" alt="customer image">
+                                        <span>Jack, Bangkok</span>
+                                    </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div>
+                            <h2>About Us</h2>
+                            <p>เว็บจำลองโรงแรมจัดทำขึ้นเพื่อทำโปรเจ็ค</p>
+                            <ul class="social-icons">
+                                <li class="flex">
+                                    <a href="http://www.twitter.com/"class= "fa fa-twitter fa-2x"></a>
+                                </li>
+                                <li class="flex">
+                                    <a href="http://www.facebook.com/"class= "fa fa-facebook fa-2x"></a>
+                                </li>
+                                <li class="flex">
+                                    <a href="https://www.instagram.com/"class= "fa fa-instagram fa-2x"></a>
+                                </li>
+        
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <h2>Name list</h2>
+                            <p>นายอัครสิชฌ์</p>
+                            <p>นายปัญญพล</p>
+                            <p>นายวิชญ์พล</p>
+                            <p>นายอัศวิน</p>
+                            <p>นายวิรัช</p>
+                        </div>
+        
+                        <div>
+                            <h2>Address</h2>
+                            <span>
+                                <i class="fas fa-map-market-alt"></i>
+                            </span> 
+                            <p>444/2 ถนน ศรีนครินทร์ ตำบล บางเมือง อำเภอเมืองสมุทรปราการ สมุทรปราการ 10270</p>
+                        </div>
+        
+                        <div>
+                            <h2>Have a Question</h2>
+                            <div class="contact-item">
+                                
+                            </div>
+        
+                            <div class="contact-item">
+                                <span>
+                                    <i class="fas fa-phone-alt"></i>
+                                </span> 
+                                <span>
+                                    026869268
+                                </span>
+                            </div>
+        
+                            <div class="contact-item">
+                                <span>
+                                    <i class="fas fa-envelope"></i>
+                                </span> 
+                                <span>
+                                    Tawanhotel@gmail.com
+                                </span>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </footer>
+        
+        
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
